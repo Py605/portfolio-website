@@ -133,6 +133,8 @@ hr{
   flex-direction: column;
   padding: 120px 50px;
   gap: 100px;
+  /* margin: auto; */
+  max-width: 1200px;
 }
 
 
@@ -178,16 +180,14 @@ hr{
   color: #bbbbbbd0;
 }
 
+
 /* ------About my skills-------- */
 .about-my-skills{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  /* gap: 30px; */
+  gap: 30px;
   min-width:100%;
-}
-.about-my-skills p{
-  /* font-size: 1.5em; */
 }
 .about-myself{
   display: flex;
@@ -445,7 +445,11 @@ footer{
 
 
 /* Media Query.. */
-@media (min-width:829px) and (max-width:1500px){
+@media (min-width:829px) and (max-width:1300px){
+  .mid-container{
+    padding: 120px 50px;
+  }
+
   .filter-item li.active,
         .filter-item li{
             width: 24.5%;
@@ -466,6 +470,26 @@ footer{
     max-width: 130px;
     margin: 5px auto 0px auto;
   }
+
+/* ------About my skills-------- */
+.about-my-skills{
+  flex-direction: column;
+  gap: 80px;
+}
+.about-myself{
+  gap: 20px;
+  min-width: 100%;
+}
+.about-myself p{
+  font-size: 1.5rem;
+}
+.about-myself a p{
+  font-size: 1.6rem;
+}
+.about-myself h1{
+  font-size: 2.7rem;
+  color: #BBBBBB;
+}
   .home-section{
     /* min-width:max-content; */
   }
@@ -475,12 +499,8 @@ footer{
   .about-section{
     /* min-width:max-content; */
   }
-  .about-myself p{
-    font-size: 1.3em;
-  }
-  .about-myself a{
-    font-size: 1.2em;
-  }
+
+  
   .filter-menu{
     min-width: 60%;
     font-size: large;
@@ -514,11 +534,26 @@ footer{
     margin: 5px auto 0px auto;
   }
   .about-myself p{
-    font-size: 1.1em;
+    font-size: 1.5rem;
   }
-  .about-myself a{
-    font-size: 1.1em;
+  .about-myself a span{
+    font-size: 1.5rem;
   }
+  .mid-container{
+    padding: 80px 40px;
+    gap: 80px;
+  }
+
+/* ------About my skills-------- */
+.about-my-skills{
+  flex-direction: column;
+  gap: 80px;
+}
+.about-myself{
+  gap: 18px;
+  min-width: 100%;
+}
+
   .filter-menu{
     max-width: 60%;
     font-size: small;
@@ -551,7 +586,24 @@ footer{
   .about-myself p{
     font-size: 1em;
   }
-  
+  .about-myself a span{
+    font-size: 1rem;
+  }
+  .mid-container{
+    padding: 80px 40px;
+    gap: 80px;
+  }
+
+/* ------About my skills-------- */
+.about-my-skills{
+  flex-direction: column;
+  gap: 80px;
+}
+.about-myself{
+  gap: 18px;
+  min-width: 100%;
+}
+
   .filter-item li.active,
   .filter-item li{
       width: 48%;
