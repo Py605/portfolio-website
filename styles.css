@@ -449,7 +449,7 @@ footer{
 
 
 /* Media Query.. */
-@media (min-width:863px) and (max-width:1300px){
+@media (min-width:865px) and (max-width:1300px){
   .mid-container{
     padding: 120px 50px;
   }
@@ -457,19 +457,17 @@ footer{
     word-spacing: 5px;    
     }
   .filter-item li.active,
-        .filter-item li{
-            width: 24.5%;
-            padding: 2px;
-            /* margin: auto; */
-        }
-      
-        h2{
-            font-size: 270%;
-        }
+  .filter-item li{
+    width: 24.5%;
+    padding: 2px;
+  }
+  h2{
+    font-size: 270%;
 }
-@media (min-width:600px) and (max-width:862px){
+}
+@media (min-width:500px) and (max-width:864px){
   .website-text{
-    font-size: 35px;
+    font-size: 3.5rem;
   }
   .underline{
     border: #CCCCCC 1.2px solid;
@@ -542,23 +540,16 @@ footer{
 .functionalities-text p{
   font-size: 1.6rem;
 }
+  /* ---Project Section-- */
+  .filter-item li{
+    height: 180px;
+  }
 }
 
 @media(max-width:640px){
   .website-text{
-    font-size: 30px;
-    /* letter-spacing: -1px;
-    word-spacing: -2px; */
-  }
-  .underline{
-    border: #CCCCCC 1.2px solid;
-    max-width: 130px;
-    margin: 5px auto 0px auto;
-  }
-  
-  .about-myself p{
-    font-size: 1.5rem;
-  }
+    font-size: 3rem;
+  }  
   .about-myself a span{
     font-size: 1.5rem;
   }
@@ -578,51 +569,30 @@ footer{
 }
 
   .filter-menu{
-    min-width: 60%;
     font-size: 1.5rem;
   }
   .filter-menu li{
     padding: 3px 20px;
   }
-
-  .filter-item{
-    margin: auto;
-  }
   .filter-item li.active,
   .filter-item li{
       width: 32.2%;
-      padding: 2px;
   }
   .big-icon{
     font-size: 1.43em;
-  }
-
-
-  
+  } 
 /* ----website .functionality---- */
 
-  .website-functionalities{
-    display: flex;
-  }
-  .two-functionality{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .icon{
-    width: 100px;
-    height: 100px;
-  }
-  .functionalities-text{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
   .functionalities-text h1{
     font-size: 2rem;
   }
   .functionalities-text p{
     font-size: 1.2rem;
+  }
+
+  /* ---Project Section-- */
+  .filter-item li{
+    height: 170px;
   }
 }
 
@@ -652,7 +622,6 @@ footer{
 .navbar-container{
   margin: auto;
   justify-content: space-between;
-  /* gap: 0; */
   padding: 10px 20px;
 }
 a{
@@ -685,6 +654,23 @@ a{
 }
 /* ---Website Functionalities--- */
 
+.website-functionalities{
+  display: flex;
+}
+.two-functionality{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
 .two-functionality{
   gap: 15px;
 }
@@ -721,10 +707,8 @@ a{
       width: 48%;
       padding: 2px;
   }
-
-  .p-tags{
-    font-size: 10px;
-    word-spacing: 1px;
+  .filter-item li{
+    height: 120px;
   }
   .footer{
     padding:  60px 0px 0px 0px;
