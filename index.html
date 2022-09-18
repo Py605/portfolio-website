@@ -232,8 +232,7 @@
       </ul>
   
       <ul class="filter-item ">
-          <li data-item="js">
-              <img src="images/js/portfolio-website.png" alt="">
+          <li data-item="js"><img src="images/js/portfolio-website.png" alt="">
           </li>
           <li data-item="react"><img src="images/react/to-do-list.png" alt=""></li>
           <li data-item="nodejs"><img src="images/nodejs/my-contact-list.png" alt=""></li>
@@ -272,10 +271,14 @@
         </p>
       </div>
       
-        <form class="input-form">
-          <input class="form-element solid-border" type="text" placeholder="Name">
-          <input class="form-element" type="email" placeholder="Email">
-          <textarea class="form-element" rows="5" cols="50" placeholder="Your Message" ></textarea>
+        <form class="input-form" onsubmit="event.preventDefault(); validateForm();">
+          <input type="hidden" name="_subject" value="Came from your portfolio-website!!!">
+          
+          <input class="form-element solid-border" type="text" placeholder="Name" id="name" required>
+          <input class="form-element" type="email" placeholder="Email"  id="email" required>
+          <textarea class="form-element" rows="5" cols="50" placeholder="Your Message" id="message" required></textarea>
+          <div class="success-message ">
+          </div>
           <input class="button uppercase" type="submit">
         </form>
     </div>
