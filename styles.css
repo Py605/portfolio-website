@@ -18,7 +18,7 @@ html{
   color: #60CFFF;
 }
 .website-text{
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   color: #CCCCCC;
 }
@@ -143,7 +143,11 @@ hr{
 .website-functionalities{
   display: flex;
   max-width: 100%;
-  gap: 25px;
+  gap: 15px;
+}
+.two-functionality{
+  display: flex;
+  gap: 15px;
 }
 .functionality{
   display: flex;
@@ -240,16 +244,16 @@ hr{
 }
 
 .ninty-percent{
-  width: 90%;
+  width: 85%;
 }
 .eighty-percent{
-  width: 80%;
+  width: 75%;
 }
 .seventy-percent{
-  width: 70%;
+  width: 65%;
 }
 .seventy-five-percent{
-  width: 75%;
+  width: 70%;
 }
 .how-much-percent{
   min-height: 100%;
@@ -275,7 +279,7 @@ img{
 .project-section{
   background-image: linear-gradient(rgba(0, 0, 0, 0.933), rgba(0, 0, 0, 0.91)), url(images/project-bg.jpg);
   min-height: 100%;
-  padding: 120px 0px;
+  padding: 50px 0px;
 }
 
 .project-container{
@@ -301,7 +305,7 @@ h2{
   display: flex;
   justify-content: space-between;
   margin: auto;
-  font-size: large;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .filter-menu li{
@@ -358,13 +362,13 @@ h2{
 }
 
 .contact-container{
-  padding: 100px 20px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: auto;
   text-align: center;
-  gap: 80px;
+  gap: 50px;
 }
 
 .p-tags{
@@ -383,7 +387,7 @@ input,textarea,button{
   max-width: 500px;
   min-height: 30px;
   background: #1e242c00;
-  border: 1.5px solid #ffffffa3;
+  border: 0.5px solid #fff;
 }
 
 .form-element{
@@ -445,11 +449,13 @@ footer{
 
 
 /* Media Query.. */
-@media (min-width:829px) and (max-width:1300px){
+@media (min-width:863px) and (max-width:1300px){
   .mid-container{
     padding: 120px 50px;
   }
-
+  .about-myself h1{
+    word-spacing: 5px;    
+    }
   .filter-item li.active,
         .filter-item li{
             width: 24.5%;
@@ -461,7 +467,7 @@ footer{
             font-size: 270%;
         }
 }
-@media (min-width:600px) and (max-width:828px){
+@media (min-width:600px) and (max-width:862px){
   .website-text{
     font-size: 35px;
   }
@@ -490,16 +496,6 @@ footer{
   font-size: 2.7rem;
   color: #BBBBBB;
 }
-  .home-section{
-    /* min-width:max-content; */
-  }
-  .navbar{
-    /* min-width:max-content; */
-  }
-  .about-section{
-    /* min-width:max-content; */
-  }
-
   
   .filter-menu{
     min-width: 60%;
@@ -520,19 +516,46 @@ footer{
       font-size: 190%;
   }
 
+  
+/* ----website .functionality---- */
+
+.website-functionalities{
+  display: flex;
+}
+.two-functionality{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.functionalities-text h1{
+  font-size: 2.2rem;
+}
+.functionalities-text p{
+  font-size: 1.6rem;
+}
 }
 
-@media(max-width:600px){
+@media(max-width:640px){
   .website-text{
     font-size: 30px;
-    letter-spacing: -1px;
-    word-spacing: -2px;
+    /* letter-spacing: -1px;
+    word-spacing: -2px; */
   }
   .underline{
     border: #CCCCCC 1.2px solid;
     max-width: 130px;
     margin: 5px auto 0px auto;
   }
+  
   .about-myself p{
     font-size: 1.5rem;
   }
@@ -555,11 +578,11 @@ footer{
 }
 
   .filter-menu{
-    max-width: 60%;
-    font-size: small;
+    min-width: 60%;
+    font-size: 1.5rem;
   }
   .filter-menu li{
-    padding: 2px 15px;
+    padding: 3px 20px;
   }
 
   .filter-item{
@@ -573,28 +596,82 @@ footer{
   .big-icon{
     font-size: 1.43em;
   }
+
+
+  
+/* ----website .functionality---- */
+
+  .website-functionalities{
+    display: flex;
+  }
+  .two-functionality{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .icon{
+    width: 100px;
+    height: 100px;
+  }
+  .functionalities-text{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .functionalities-text h1{
+    font-size: 2rem;
+  }
+  .functionalities-text p{
+    font-size: 1.2rem;
+  }
 }
-@media (min-width:300px) and (max-width:500px){
+
+@media (min-width:200px) and (max-width:500px){
   .website-text{
-    font-size: 20px;
+    /* font-size: 1.2rem; */
   }
   .underline{
     border: #CCCCCC 0.9px solid;
     max-width: 80px;
     margin: 4px auto 0px auto;
   }
+
+  /* ---Home section---- */
+  .my-name{
+    font-size: 3rem;
+  }
+  .container .details{
+    font-size: 1.3rem;
+  }
+  .work span{
+    font-size: 1.5rem;
+    border: #fff 1pt solid;
+    padding: 8px;
+  }
+/* ----Navbar--- */
+.navbar-container{
+  margin: auto;
+  justify-content: space-between;
+  /* gap: 0; */
+  padding: 10px 20px;
+}
+a{
+  font-size: 1.2rem;
+}
   .about-myself p{
-    font-size: 1em;
+    font-size: 1.3rem;
   }
   .about-myself a span{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .mid-container{
     padding: 80px 40px;
-    gap: 80px;
+    gap: 50px;
   }
 
 /* ------About my skills-------- */
+
+
 .about-my-skills{
   flex-direction: column;
   gap: 80px;
@@ -603,7 +680,42 @@ footer{
   gap: 18px;
   min-width: 100%;
 }
+.which-language{
+  min-width: 90px;
+}
+/* ---Website Functionalities--- */
 
+.two-functionality{
+  gap: 15px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.functionality{
+  gap: 10px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 85px;
+}
+.functionalities-text h1{
+  font-size: 1.8rem;
+}
+.functionalities-text p{
+  font-size: 1.2rem;
+}
+/* ---Project section--- */
+.filter-menu{
+  min-width: 60%;
+  font-size: 1.3rem;
+}
+.filter-menu li{
+  max-width: 20%;
+  padding: 2px 15px;
+}
   .filter-item li.active,
   .filter-item li{
       width: 48%;
@@ -616,10 +728,19 @@ footer{
   }
   .footer{
     padding:  60px 0px 0px 0px;
-    gap: 8rem;
+    /* gap: 8rem; */
     max-width: 30rem;
   }
   .big-icon{
-    font-size: 1.13em;
+    font-size: 1.43em;
+  }
+
+  /* ----contact section--- */
+  .p-tags{
+    font-size: 15px;
+    word-spacing: 3px;
   }
 }
+
+
+
