@@ -6,8 +6,21 @@
   color: aliceblue;
 }
 html{
+  scroll-behavior: smooth;
   font-size: 10px;
 }
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(188, 188, 188);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background:black;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
