@@ -33,11 +33,11 @@ html{
 /*------------ Home Section---------- */ 
 
 .home-section{
-  height: 100%;
-}
-.home{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(to top , rgb(0, 0, 0) , transparent) , linear-gradient(to left , rgba(0, 0, 0, 0.405) , transparent) , url(images/home-bg.jpg);
-  min-height: 100%;
 }
 .image{
   position:static;
@@ -46,24 +46,23 @@ html{
   background-repeat: no-repeat;
 }
 .container{
-  max-width: 87rem;
-  margin: auto;
+  max-width: 70vw;
+  margin: auto
 }
 .home-container{
-  padding: 150px 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* color: aliceblue; */
   color: #CCCCCC;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .my-name{
-  font-size: 3.48rem;
+  font-size: 5.75rem;
 }
 .container .details{
-  font-size: 1.6rem;
+  color: rgb(202, 202, 202);
+  font-size: 2rem;
 }
 .pink-color{
   color: #f33482;
@@ -88,25 +87,23 @@ html{
 
 
 /*--------- Nav Section-------- */
-
-
-nav{
-  margin-top: -4px;
-}
-.navbar{
-  position: sticky;
-  top: 0;
-  z-index:1;
-  background-color: transparent ;
+#navbar{
+  background-color: black;
 }
 .navbar-container{
   display: flex;
   gap: 40px;
+  margin-left: 10%;
   padding: 20px 30px;
-  background-color: black;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 a{
-  color: aliceblue;
+  color: rgb(202, 202, 202);
   font-size: 15px;
   text-decoration: none;
 }
@@ -128,7 +125,7 @@ hr{
   min-height: 100%;
   max-width: 100%;
 }
-.mid-container{
+.about-container{
   display: flex;
   flex-direction: column;
   padding: 120px 50px;
@@ -176,11 +173,11 @@ hr{
   gap: 8px;
 }
 .functionalities-text h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #BBBBBB;
 }
 .functionalities-text p{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #bbbbbbd0;
 }
 
@@ -205,6 +202,7 @@ hr{
   text-align: center;
   justify-content: center;
   color: #BBBBBB;
+  line-height: 1.4;
 }
 .about-myself h1{
   font-size: 2.5rem;
@@ -230,8 +228,9 @@ hr{
   text-align: center;  
   background-color: #101214;
   min-width: 110px;
-  font-size: 13px;
+  font-size: 14px;
 }
+
 .language{
   display: flex;
   justify-content: space-between;
@@ -289,14 +288,14 @@ img{
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 h2{
   text-transform: uppercase;
   font-weight: normal;
   font-size: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #fff;
 }
 
@@ -322,13 +321,13 @@ h2{
 .filter-item li{
   height: 200px;
   width: 24.5%;
-  padding: 3px;
+  padding: 2px;
   float: left;
 }
 
 .filter-item li.active{
   width: 24.5%;
-  padding: 3px;
+  padding: 2px;
   transition: all 0.9s ease;
 }
 
@@ -374,6 +373,7 @@ h2{
 .p-tags{
   font-size: 15px;
   letter-spacing: -1px;
+  
 }
 
 .input-form{
@@ -392,7 +392,8 @@ input,textarea,button{
 
 .form-element{
   resize: none;
-  padding: 3px 10px;
+  padding: 3px 12px;
+  font-size: 1.5rem;
 }
 
 .success-message{
@@ -472,7 +473,17 @@ footer{
 
 /* Media Query.. */
 @media (min-width:900px) and (max-width:1300px){
-  .mid-container{
+
+  /* ----Home Section---- */
+  .my-name{
+    font-size: 4.8rem;
+  }
+  .container .details{
+    font-size: 1.8rem;
+  }
+
+
+  .about-container{
     padding: 120px 50px;
   }
   .about-myself h1{
@@ -501,6 +512,13 @@ footer{
     margin: 5px auto 0px auto;
   }
 
+/* ---Home Section--- */
+.my-name{
+  font-size: 4rem;
+}
+.container .details{
+  font-size: 1.5rem;
+}
 /* ------About my skills-------- */
 .about-my-skills{
   flex-direction: column;
@@ -582,7 +600,7 @@ footer{
   .about-myself a span{
     font-size: 1.5rem;
   }
-  .mid-container{
+  .about-container{
     padding: 80px 40px;
     gap: 80px;
   }
@@ -666,7 +684,7 @@ a{
   .about-myself a span{
     font-size: 1.3rem;
   }
-  .mid-container{
+  .about-container{
     padding: 80px 40px;
     gap: 50px;
   }
@@ -755,6 +773,5 @@ a{
     word-spacing: 3px;
   }
 }
-
 
 
