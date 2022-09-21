@@ -101,6 +101,7 @@ html{
 
 /*--------- Nav Section-------- */
 #navbar{
+  z-index: 1;
   background-color: black;
 }
 .navbar-container{
@@ -291,7 +292,7 @@ img{
 .project-section{
   background-image: linear-gradient(rgba(0, 0, 0, 0.933), rgba(0, 0, 0, 0.91)), url(images/project-bg.jpg);
   min-height: 100%;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 
 .project-container{
@@ -374,7 +375,7 @@ h2{
 }
 
 .contact-container{
-  padding: 50px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -384,7 +385,7 @@ h2{
 }
 
 .p-tags{
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: -1px;
   
 }
@@ -438,35 +439,56 @@ input,textarea,button{
   margin: 5px 0 0 0;
   outline: 0;
   padding: 10px 25px;
+  background-color: #17315A;
+
 }
 .button:hover {
   transition: 0.7s;
   cursor: pointer;
-  background-color: #04c2c9;
+  /* background-color: #011e20; */
+  transform: translateY(-3px) ;
+  box-shadow: 0 5px 10px rgba(104, 134, 147, 0.166);
 }
-
+.button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 
 /* ------Footer Section-------- */
 .upward-arrow{
-  margin-top: -15px;
+  margin: auto;
+  margin-bottom: -18px;
+  bottom: 18px;
   position: relative;
   z-index: 10;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+.upward-arrow:hover {
+  transform: translateY(-3px) ;
+}
+.upward-arrow:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 .upward-arrow i{
+  margin-top: 5px;
+  color: black;
   position: absolute;
   text-align: center;
   width: 100%;
   height: 100%;
 }
 
-
 footer{
-  min-height: 180px;
+  /* min-height: 220px; */
   background-color: #101214;
 }
 
 .footer{
-  padding:  60px 0px 0px 0px;
+  padding:  40px 0px 0px 0px;
   gap: 8rem;
   max-width: 40rem;
 }
@@ -481,6 +503,7 @@ footer{
   font-size: 1.6em;
   padding-top: 50px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 
@@ -691,27 +714,26 @@ footer{
 a{
   font-size: 1.2rem;
 }
-  .about-myself p{
-    font-size: 1.3rem;
-  }
-  .about-myself a span{
-    font-size: 1.3rem;
-  }
+
+ 
+  
+  /* ------About my skills-------- */
+  
   .about-container{
     padding: 80px 40px;
     gap: 50px;
   }
-
-/* ------About my skills-------- */
-
 
 .about-my-skills{
   flex-direction: column;
   gap: 80px;
 }
 .about-myself{
-  gap: 18px;
+  gap: 25px;
   min-width: 100%;
+}
+.about-myself p{
+  font-size: 1.5rem;
 }
 .which-language{
   min-width: 90px;
@@ -752,10 +774,10 @@ a{
   min-height: 85px;
 }
 .functionalities-text h1{
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .functionalities-text p{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 /* ---Project section--- */
 .filter-menu{
@@ -771,19 +793,24 @@ a{
       width: 100%;
       height: 200px;
   }
+
+  /* ----contact section--- */
+  .p-tags{
+    font-size: 15px;
+    word-spacing: 3px;
+  }
+
+  /* ---Footer Section--- */
+
   .footer{
-    padding:  60px 0px 0px 0px;
-    /* gap: 8rem; */
     max-width: 30rem;
   }
   .big-icon{
     font-size: 1.43em;
   }
 
-  /* ----contact section--- */
-  .p-tags{
-    font-size: 15px;
-    word-spacing: 3px;
+  .upward-arrow i{
+    font-size: 2.8rem;
   }
 }
 
