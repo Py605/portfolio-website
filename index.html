@@ -264,28 +264,76 @@
   </div>
   </section>
   
-  <section class="contact-section image" id="contact-section">
-    <div class="contact-container">
-      <h1 class="website-text uppercase bold">Contact
-      <hr class="underline ">
-      </h1>
-      <div class="p-tags">
-        <p class="highlight bold">Please provide your feedback
-        <br>
-        Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.
-        </p>
-      </div>
-      
+  <section class="contact-section  image" id="contact-section">
+    <div class="outer-container">
+      <div class="contact-form">
+
+        <h2 class="contact-text uppercase bold">Contact 
+        <!-- <hr class="underline "> -->
+        </h2>
+        <div class="p-tags">
+          <p class="">Send me a Note
+          </p>
+        </div>
+        
         <form class="input-form" onsubmit="event.preventDefault(); validateForm();">
-          <input type="hidden" name="_subject" value="Came from your portfolio-website!!!">
-          
-          <input class="form-element solid-border" type="text" placeholder="Name" id="name" required>
-          <input class="form-element" type="email" placeholder="Enter mail"  id="email" required>
-          <textarea class="form-element" rows="5" cols="50" placeholder="Your Message" id="message" required></textarea>
-          <div class="success-message ">
-          </div>
-          <input class="button uppercase" type="submit">
+ 
+            
+            <input class="form-element solid-border" type="text" placeholder="Name" id="name" required>
+            <input class="form-element" type="email" placeholder="Enter mail"  id="email" required>
+            <textarea class="form-element" rows="4" cols="50" placeholder="Your Message" id="message" required></textarea>
+            <div class="success-message ">
+            </div>
+            <input class="button uppercase" type="submit">
         </form>
+      </div>
+
+      <div class="contacts">
+        <div class="hire-me">
+          <h2 class=" bold">Hire Me 
+          </h2>
+        </div>
+        <div class="contact-container phone" onclick="window.open('tel:+918477991834');">
+          <div class="contact-icon">
+            <i class="fa fa-phone fa-1x contact-social"></i>
+          </div>
+          <div class="contact-info">
+            <a href="tel:+918477991834" class="contact-data">+91 8477991834</a>
+          </div>
+        </div>
+
+        <div class="contact-container mail-id" onclick="window.open('mailto:pryanshubharti9412@gmail.com');">
+          <div class="contact-icon">
+            <i class="fa fa-envelope fa-1x contact-social"></i>
+          </div>
+          <div class="contact-info">
+            <a href="mailto:pryanshubharti9412@gmail.com" class="contact-data">pryanshubharti9412@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="s-medias">
+          <h3 class="s-head">Catch Me On</h3>
+
+          <div class="social-media-pack">
+            
+            <a id="twitter" href="https://twitter.com/Py_605" target="_blank" rel="noopener" alt="twitter">
+              <i class="fa fa-twitter contact-social"></i>
+            </a>
+            <a id="telegram" href="https://t.me/py605" target="_blank" rel="noopener" alt="telegram">
+              <i class="fa fa-telegram contact-social"></i>
+            </a>
+            <a id="linkedin" href="https://www.linkedin.com/in/priyanshu-bharti-a253941b0/" target="_blank" rel="noopener" alt="linkedin">
+              <i class="fa fa-linkedin contact-social"></i>
+            </a>
+            <a id="github" href="https://github.com/py605" target="_blank" rel="noopener" alt="github">
+              <i class="fa fa-github contact-social"></i>
+            </a>
+            <a id="leetcode" href="https://leetcode.com/py605" target="_blank" rel="noopener" alt="leetcode">
+              <i class="contact-social fa-solid fa-code"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
  
   </section>
@@ -325,7 +373,9 @@
           </a>
         </div>
       </div>
-      <div class="copyright-text">Priyanshu Bharti <span class="highlight pink-color">©2022</span></div>
+      <hr width="100%">
+      <div class="copyright-text">Priyanshu Bharti <span class="highlight pink-color">©2022</span>
+      </div>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/4a8337fc93.js" crossorigin="anonymous"></script>
